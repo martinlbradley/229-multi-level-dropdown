@@ -15,8 +15,8 @@ function App() {
   return (
     <Navbar>
       <NavItem icon={<PlusIcon />} />
-      <NavItem icon={<BellIcon />} />
       <NavItem icon={<MessengerIcon />} />
+      <NavItem icon={<BellIcon />} />
 
       <NavItem icon={<CaretIcon />}>
         <DropdownMenu></DropdownMenu>
@@ -106,7 +106,7 @@ function DropdownMenu() {
         onEnter={calcHeight}>
         <div className="menu">
           <DropdownItem goToMenu="main" leftIcon={<ArrowIcon />}>
-            <h2>My Tutorial</h2>
+            <h3>Settings</h3>
           </DropdownItem>
           <DropdownItem leftIcon={<BoltIcon />}>HTML</DropdownItem>
           <DropdownItem leftIcon={<BoltIcon />}>CSS</DropdownItem>
@@ -123,7 +123,7 @@ function DropdownMenu() {
         onEnter={calcHeight}>
         <div className="menu">
           <DropdownItem goToMenu="main" leftIcon={<ArrowIcon />}>
-            <h2>Animals</h2>
+            <h3>Animals</h3>
           </DropdownItem>
           <DropdownItem leftIcon="🦘">Kangaroo</DropdownItem>
           <DropdownItem leftIcon="🐸">Frog</DropdownItem>
